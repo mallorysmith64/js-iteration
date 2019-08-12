@@ -51,19 +51,17 @@
 
 */
 
-/**
- * Define a function named `yelling` that takes an array of
- * strings as an argument and returns a new array with all
- * the words forced to uppercase
- *
- * Example:
- *
- * const yelling = (array) => {
- *    // your code here
- * }
- */
-
-// ...
+//  * Define a function named `yelling` that takes an array of
+//  * strings as an argument and returns a new array with all
+//  * the words forced to uppercase
+//  *
+//  * Example:
+const yelling = words => {
+  return words.map(word => {
+    //1st return returns the function yelling
+    return word.toUpperCase() //second return returns map
+  })
+}
 
 /**
  *
@@ -72,7 +70,9 @@
  * the numbers multiplied by 2
  */
 
-// ...
+const doubleTrouble = numb => {
+  return numb.map(x => x * 2)
+}
 
 /*
  * Define a function stringyIndexes() that takes an array of
@@ -80,7 +80,14 @@
  * suffixed with " is at index X" where X is the index of the element
  */
 
-// ...
+const stringyIndexes = strings => {
+  return string.map([
+    '[0] is at index 0',
+    '[1] now is at index 1',
+    '[2] is at index',
+    '[3] is at index'
+  ])
+}
 
 /*
  * Define a function onlyTheEvenSurvive that accepts an array of
@@ -189,7 +196,9 @@ import test from 'ava'
 
 const ensureDefined = (t, method) => {
   if (eval(`typeof ${method}`) !== 'function') {
-    t.fail(`\n\n\n\n\n⚡️⚡️⚡️⚡️⚡️ The next step is to define the function ${method} ⚡️⚡️⚡️⚡️⚡️\n\n\n`)
+    t.fail(
+      `\n\n\n\n\n⚡️⚡️⚡️⚡️⚡️ The next step is to define the function ${method} ⚡️⚡️⚡️⚡️⚡️\n\n\n`
+    )
   }
 }
 
