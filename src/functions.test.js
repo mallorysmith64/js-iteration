@@ -65,7 +65,7 @@ const yelling = words => {
 
 /**
  *
- * Define a function named `doubleTrouble` that takes an array of
+//  * Define a function named `doubleTrouble` that takes an array of
  * numbers as an argument and returns a new array with all
  * the numbers multiplied by 2
  */
@@ -80,22 +80,33 @@ const doubleTrouble = numb => {
  * suffixed with " is at index X" where X is the index of the element
  */
 
-const stringyIndexes = strings => {
-  return string.map([
-    '[0] is at index 0',
-    '[1] now is at index 1',
-    '[2] is at index',
-    '[3] is at index'
-  ])
+const stringyIndexes = arrayOfStrings => {
+  return arrayOfStrings.map(string => {
+    return `${string} is at index ${arrayOfStrings.indexOf(string)}`
+  })
 }
+
+// //string interpolation
+// const stringyIndexes = people => {
+//   return people.map((people, index) => {
+//     return people + ' is at index ' + index
+//   })
+// }
 
 /*
  * Define a function onlyTheEvenSurvive that accepts an array of
  * numbers and returns only the elements that are even
  */
 
-// ...
-
+//use filter
+const onlyTheEvenSurvive = evens => {
+  let ret = evens.filter(even => {
+    if (even % 2 === 0) {
+      return even
+    }
+  })
+  return ret
+}
 /*
  * Define a function onlyTheEvenIndexedSurvive that accepts an array of
  * numbers and returns only the elements at indexes that are even
