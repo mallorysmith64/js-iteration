@@ -15,47 +15,13 @@
    the next function is working.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 */
 
 //  * Define a function named `yelling` that takes an array of
 //  * strings as an argument and returns a new array with all
 //  * the words forced to uppercase
 //  *
-//  * Example:
+
 const yelling = words => {
   return words.map(word => {
     //1st return returns the function yelling
@@ -114,7 +80,6 @@ const onlyTheEvenSurvive = evens => {
 
 const onlyTheEvenIndexedSurvive = number => {
   let evenArrayIndexes = []
-  console.log(number)
   for (let index = 0; index < number.length; index++) {
     if (index % 2 === 0) {
       evenArrayIndexes.push(number[index])
@@ -129,11 +94,13 @@ const onlyTheEvenIndexedSurvive = number => {
 
 const bestMoviesOfTheYear = arrayOfMovies => {
   let movies = []
+  console.log(arrayOfMovies)
   let movie = {
     name: 'Get Out',
     year: '2017',
     score: '99'
   }
+
   return movie
 }
 
