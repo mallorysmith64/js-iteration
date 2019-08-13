@@ -80,13 +80,13 @@ const doubleTrouble = numb => {
  * suffixed with " is at index X" where X is the index of the element
  */
 
+//string interpolation
 const stringyIndexes = arrayOfStrings => {
   return arrayOfStrings.map(string => {
     return `${string} is at index ${arrayOfStrings.indexOf(string)}`
   })
 }
 
-// //string interpolation
 // const stringyIndexes = people => {
 //   return people.map((people, index) => {
 //     return people + ' is at index ' + index
@@ -100,41 +100,54 @@ const stringyIndexes = arrayOfStrings => {
 
 //use filter
 const onlyTheEvenSurvive = evens => {
-  let ret = evens.filter(even => {
+  let onlyEvens = evens.filter(even => {
     if (even % 2 === 0) {
       return even
     }
   })
-  return ret
+  return onlyEvens
 }
 /*
  * Define a function onlyTheEvenIndexedSurvive that accepts an array of
  * numbers and returns only the elements at indexes that are even
  */
 
-// ...
+const onlyTheEvenIndexedSurvive = number => {
+  let evenArrayIndexes = []
+  console.log(number)
+  for (let index = 0; index < number.length; index++) {
+    if (index % 2 === 0) {
+      evenArrayIndexes.push(number[index])
+    }
+  }
+  return evenArrayIndexes
+}
 
-/*
- * Define a function bestMoviesOfTheYear that accepts an array of
- * movie objects AND a year and returns the names of movies that are
- * from that year AND have a score more than 90
- *
- * A movie object looks like this:
- *
- * {
- *   name: "Get Out",
- *   year: "2017",
- *   score: 99
- * }
- */
+// Define a function bestMoviesOfTheYear that accepts an array of
+//  movie objects AND a year and returns the names of movies that are
+//  from that year AND have a score more than 90
 
-// ...
 
-/*
- * Define a function everyoneIsOdd that accepts an array of
- * numbers and returns true if every element of the array is
- * odd.
- */
+const bestMoviesOfTheYear = {
+  [{name: 'Get Out'},
+  {year: '2017'},
+  {score: 99}]
+}
+
+// const movies = [
+//   { name: 'The Grand Budapest Hotel', year: 2014, score: 91 },
+//   { name: 'Birdman', year: 2014, score: 91 },
+//   { name: 'Transformers: Age of Extinction', year: 2014, score: 18 },
+//   { name: 'Rage', year: 2014, score: 14 },
+//   { name: 'Get Out', year: 2017, score: 99 },
+//   { name: 'Justice League', year: 2017, score: 40 },
+//   { name: 'Ghost in the Shell', year: 2017, score: 46 },
+//   { name: 'The Big Sick', year: 2017, score: 98 }
+// ]
+
+//   Define a function everyoneIsOdd that accepts an array of
+//  * numbers and returns true if every element of the array is
+//  * odd.
 
 // ...
 
