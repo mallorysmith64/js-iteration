@@ -127,11 +127,14 @@ const onlyTheEvenIndexedSurvive = number => {
 //  movie objects AND a year and returns the names of movies that are
 //  from that year AND have a score more than 90
 
-
-const bestMoviesOfTheYear = {
-  [{name: 'Get Out'},
-  {year: '2017'},
-  {score: 99}]
+const bestMoviesOfTheYear = arrayOfMovies => {
+  let movies = []
+  let movie = {
+    name: 'Get Out',
+    year: '2017',
+    score: '99'
+  }
+  return movie
 }
 
 // const movies = [
