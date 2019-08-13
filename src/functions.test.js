@@ -100,13 +100,11 @@ const bestMoviesOfTheYear = (arr, year) => {
 //  * numbers and returns true if every element of the array is
 //  * odd.
 
-const bestMoviesOfTheYear = (arr, year) => {
-  let moviesFiltered = arr.filter(arr => arr.score > 90 && arr.year == year)
-  const newArr = []
-  moviesFiltered.forEach(arr => {
-    newArr.push(arr.name)
+const everyoneIsOdd = number => {
+  console.log(odds)
+  let oddNumber = odds.filter(odd => odd.number {
+    return number
   })
-  return newArr
 }
 
 /*
@@ -115,8 +113,10 @@ const bestMoviesOfTheYear = (arr, year) => {
  * `needle` inside
  */
 
-// ...
-
+//should be correct
+const findTheNeedle = words => {
+  return words.filter(word => word.includes('needle'))[0]
+}
 /*
  * Define a function findTheNeedleIndex that accepts an array of
  * strings and returns the index of the string that contains
