@@ -1,7 +1,4 @@
 /*
-
-
-
    Welcome to JS Interation
 
    Down below you will find instructions for code to write.
@@ -13,8 +10,6 @@
 
    Once you finish a function and have it correct, the test will tell you if/how
    the next function is working.
-
-
 */
 
 //  * Define a function named `yelling` that takes an array of
@@ -92,34 +87,27 @@ const onlyTheEvenIndexedSurvive = number => {
 //  movie objects AND a year and returns the names of movies that are
 //  from that year AND have a score more than 90
 
-const bestMoviesOfTheYear = arrayOfMovies => {
-  let movies = []
-  console.log(arrayOfMovies)
-  let movie = {
-    name: 'Get Out',
-    year: '2017',
-    score: '99'
-  }
-
-  return movie
+const bestMoviesOfTheYear = (arr, year) => {
+  let moviesFiltered = arr.filter(arr => arr.score > 90 && arr.year == year)
+  const newArr = []
+  moviesFiltered.forEach(arr => {
+    newArr.push(arr.name)
+  })
+  return newArr
 }
-
-// const movies = [
-//   { name: 'The Grand Budapest Hotel', year: 2014, score: 91 },
-//   { name: 'Birdman', year: 2014, score: 91 },
-//   { name: 'Transformers: Age of Extinction', year: 2014, score: 18 },
-//   { name: 'Rage', year: 2014, score: 14 },
-//   { name: 'Get Out', year: 2017, score: 99 },
-//   { name: 'Justice League', year: 2017, score: 40 },
-//   { name: 'Ghost in the Shell', year: 2017, score: 46 },
-//   { name: 'The Big Sick', year: 2017, score: 98 }
-// ]
 
 //   Define a function everyoneIsOdd that accepts an array of
 //  * numbers and returns true if every element of the array is
 //  * odd.
 
-// ...
+const bestMoviesOfTheYear = (arr, year) => {
+  let moviesFiltered = arr.filter(arr => arr.score > 90 && arr.year == year)
+  const newArr = []
+  moviesFiltered.forEach(arr => {
+    newArr.push(arr.name)
+  })
+  return newArr
+}
 
 /*
  * Define a function findTheNeedle that accepts an array of
