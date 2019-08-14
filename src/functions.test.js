@@ -97,16 +97,29 @@ const bestMoviesOfTheYear = (arr, year) => {
 }
 
 //   Define a function everyoneIsOdd that accepts an array of
-//  * numbers and returns true if every element of the array is
-//  * odd.
-
-const everyoneIsOdd = number => {
-  console.log(odds)
-  let oddNumber = odds.filter(odd => odd.number {
-    return number
+//  numbers and returns true if every element of the array is
+//  odd.
+const arr = []
+const everyoneIsOdd = odds => {
+  let onlyOdds = odds.filter(odd => {
+    // arr.push(arr.odds)
+    if (odd % 2 !== 0) {
+      return 'true'
+    } else {
+      console.log(onlyOdds)
+      return 'false'
+    }
   })
 }
 
+// const onlyTheEvenSurvive = evens => {
+//   let onlyEvens = evens.filter(even => {
+//     if (even % 2 === 0) {
+//       return even
+//     }
+//   })
+//   return onlyEvens
+// }
 /*
  * Define a function findTheNeedle that accepts an array of
  * strings and returns the one string that contains the word
