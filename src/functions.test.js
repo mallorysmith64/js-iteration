@@ -99,17 +99,16 @@ const bestMoviesOfTheYear = (arr, year) => {
 //   Define a function everyoneIsOdd that accepts an array of
 //  numbers and returns true if every element of the array is
 //  odd.
-const arr = []
 const everyoneIsOdd = odds => {
+  let originalArraySize = odds.length
   let onlyOdds = odds.filter(odd => {
-    // arr.push(arr.odds)
     if (odd % 2 !== 0) {
-      return 'true'
-    } else {
-      console.log(onlyOdds)
-      return 'false'
+      return odd
     }
   })
+
+  //todo check if the above array LENGTH is equal to originalArraySize
+  //if it is return true else return false
 }
 
 // const onlyTheEvenSurvive = evens => {
